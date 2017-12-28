@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D技术定制</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <style>
+        .main {
+            margin-top: 10px;
+        }
+
+        .main div {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .main img {
+            display: block;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body style="background: url('./imgs/background_blank.jpg')">
+
+<nav-bar></nav-bar>
+<left-nav></left-nav>
+<main-layout>
+    <img src="./imgs/detail_2/3-0.png" alt="" style="width: 200px">
+    <div class="main">
+        <div style="margin-bottom: 80px;">
+            <a href="./detail_3.html">
+                <img src="./imgs/detail_2/图片5.png" alt="">
+            </a>
+            <img src="./imgs/detail_2/图片6.png" alt="">
+            <img src="./imgs/detail_2/图片7.png" alt="">
+            <img src="./imgs/detail_2/图片8.png" alt="">
+            <img src="./imgs/detail_2/图片9.png" alt="" style="width: 200px">
+        </div>
+    </div>
+    <footer fixed = true></footer>
+</main-layout>
+<script src="./lib/js/jquery-3.2.1.min.js"></script>
+<script src="./lib/js/riot.min.js"></script>
+<script src="./dist/riot_components.js"></script>
+<script>
+    riot.mount('*')
+</script>
+</body>
+</html>

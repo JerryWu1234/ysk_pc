@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.item img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#nav--bar {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    background-color: #01BCF1;
+}
+
+#nav--bar .menu-icon {
+    float: left;
+}
+
+#nav--bar .search-icon {
+    float: right;
+}
+
+#nav--bar .nav-icon {
+    color: #fff;
+    font-size: 30px;
+    margin: 12px;
+}
+
+.content-warp {
+    background-color: #fff;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.content .nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    left: 10px;
+    text-align: center
+}
+
+.content .title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 370px) {
+    #main .content .shopImg {
+        width: 60px;
+    }
+
+    #main .content .moreImg {
+        width: 60px;
+        margin-top: 5px
+    }
+
+    #main .content .title {
+        font-size: 16px;
+    }
+
+    #main .content .subTitle {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 370px) and (min-width: 325px) {
+    #main .content .shopImg {
+        width: 60px;
+    }
+
+    #main .content .moreImg {
+        width: 60px;
+        margin-top: 5px
+    }
+
+    #main .content .title {
+        font-size: 16px;
+    }
+
+    #main .content .subTitle {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+/*@media screen and (max-width: 325px) {*/
+    /*#main .content .shopImg {*/
+        /*width: 50px;*/
+    /*}*/
+
+    /*#main .content .moreImg {*/
+        /*width: 50px;*/
+        /*margin-top: 2px*/
+    /*}*/
+
+    /*#main .content .title {*/
+        /*font-size: 14px;*/
+    /*}*/
+
+    /*#main .content .subTitle {*/
+        /*color: #fff;*/
+        /*font-size: 12px;*/
+    /*}*/
+/*}*/
+
+.content .shopImg {
+    width: 70px;
+}
+
+.content .moreImg {
+    width: 70px;
+    margin-top: 5px
+}
+
+.content .subTitle {
+    color: #fff;
+    font-size: 16px;
+}
+
+.carousel-indicators li {
+    border-color: #838B8B;
+}
+
+.carousel-indicators .active {
+    background-color: #838B8B;
+}

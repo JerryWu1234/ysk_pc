@@ -1,0 +1,27 @@
+{
+  "name": "ysk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wulinsheng123/ysk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wulinsheng123/ysk/issues"
+  },
+  "homepage": "https://github.com/wulinsheng123/ysk#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-riot": "^1.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

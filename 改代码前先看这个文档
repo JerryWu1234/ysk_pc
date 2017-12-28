@@ -1,0 +1,16 @@
+dist目录下的js是程序自动生成的 不要去修改!!!
+页面上的 一个个 自定义的标签 都可以在components目录下找到 dist目录下的文件就是通过这些文件自动生成的
+
+在当前目录运行命令
+npm install  //下载自动生产代码的依赖包  下载一次就可以了
+npm install gulp -g //下载全局gulp下载一次就可以了
+
+生成dist代码
+npm run build
+
+开发态 (修改components里的代码 自动生成代码)
+npm run dev
+
+向服务端渲染迁移
+只需要全局搜索把自定义的标签 替换成自己的模版函数即可
+把CSS 和 JS 抽出来做完一个文件

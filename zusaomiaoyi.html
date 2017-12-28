@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>足部扫描仪</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <style>
+        .steam {
+            position: relative;
+
+        }
+
+        .steam > div {
+            width: 50%;
+            position: absolute;
+            left: 10px;
+            top: 80px;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+<nav-bar></nav-bar>
+<left-nav></left-nav>
+<main-layout>
+    <img src="./imgs/detail_1/2-1.png" alt="" style="width: 200px;position: absolute;top:-51px;">
+    <tabs>
+        <tab href="./zuyaliban.html">足部压力板</tab>
+        <tab active={true}>足部扫描仪</tab>
+        <tab href="./kangfuyi.html">康复仪</tab>
+        <tab>背部扫描仪</tab>
+    </tabs>
+    <div style="width: 90%;margin: 10px auto 0px auto">
+        <img src="./imgs/contentpage/2-2_03.png" alt="" style="width: 100%;margin-top:25px;">
+        <p class="context-font-size" style="color: #71d7a1;font-weight: bold"> 足底扫描仪</p>
+        <div class="context-font-size">
+            <p>SCHEINWORKS DigiPED能够在数秒之内为客户进行足底数字扫描</p>
+            <P style="margin-top:15px">软件会重点测量和记录足底的长、宽。如果扫描仪添加了相机功能，就可以分析并记录足底，尤其是脚跟处的情况。</p>
+            <p style="margin-top:15px">为了更精确地制作鞋垫，您可以把扫描图片1:1地投影在屏幕上或者打印出来（需要A3打印机）。</p>
+            <p style="margin-top:15px">足底的扫描图片也能收集到我们的SCHEINWORKS鞋垫项目数据库中。</p>
+        </div>
+        <img src="./imgs/contentpage/2-2_03.jpg" alt="" style="width: 100%;margin-top:25px;">
+        <table style="font-size: 10px;font-weight: normal;width: 100%;" class="table table-bordered table-responsive">
+            <tr>
+                <th colspan="2">
+                    DigiPED足底扫描仪货号032211-100
+                </th>
+
+            </tr>
+            <tr>
+                <td>整体（长x宽x高）</td>
+                <td>65.4 x 44.4 x 11.3 cm</td>
+
+            </tr>
+            <tr>
+                <td>重量</td>
+                <td>约16.6kg</td>
+            </tr>
+            <tr>
+                <td>扫描区域(长 x 宽 )</td>
+                <td>42.2 x 30.5 cm</td>
+
+            </tr>
+            <tr>
+                <td>最大承重</td>
+                <td>约200 kg</td>
+
+            </tr>
+            <tr>
+                <td>扫描时长</td>
+                <td>1约8秒</td>
+
+            </tr>
+            <tr>
+                <td>PC端接口</td>
+                <td>High-speed USB 2.0</td>
+
+            </tr>
+            <tr>
+                <td>电源</td>
+                <td>24 V DC</td>
+
+            </tr>
+            <tr>
+                <td>消耗功率</td>
+                <td>备用8W，最高＜36W</td>
+
+            </tr>
+            <tr>
+                <td>灯管类型</td>
+                <td>冷阴极灯</td>
+
+            </tr>
+            <tr>
+                <td>颜色(外部/内部)</td>
+                <td>浅灰色/灰色</td>
+
+            </tr>
+
+        </table>
+        <div class="steam">
+            <img src="./imgs/contentpage/2-5.png" style="width: 100%;margin-top:15px;">
+            <div>
+                <p class="context-font-size" style="color: #71d7a1;font-weight: bold"> 足底扫描仪</p>
+                <P style="margin-top:15px">如果您不想把足底扫描仪直接放在地面上，我们推荐您安装一个专门的扫描仪展示台。</p>
+                <p style="margin-top:15px">有了扫描仪展示台，既能保护足底扫描仪，又美观大方，还能作为放置笔记本电脑或PAD的工作台。</p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</main-layout>
+
+<script src="./lib/js/jquery-3.2.1.min.js"></script>
+<script src="./lib/js/riot.min.js"></script>
+<script src="./dist/riot_components.js"></script>
+<script>
+    riot.mount('*')
+</script>
+</body>
+</html>

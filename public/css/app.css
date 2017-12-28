@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav-bar {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    height: 120px;
+    line-height: 120px;
+
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clear {
+    overflow: hidden;
+}
+
+#nav-bar .nav-icon {
+    color: #00A0E9;
+    font-size: 50px;
+}

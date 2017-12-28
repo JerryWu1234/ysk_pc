@@ -1,0 +1,44 @@
+<main-layout>
+    <div style="position: relative" id="main">
+        <yield/>
+    </div>
+
+    <style>
+        .context-font-size {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 370px) {
+            #main .context-font-size {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+    <script>
+        this.on("mount", function () {
+            var $menuIcon = $(".menu-icon"),
+                $leftNav = $("#left-nav"),
+                $main = $("#main");
+
+            $menuIcon.on("touchend", function () {
+                if ($leftNav.css("left") !== "0px") {
+                    $leftNav.animate({
+                        left: "0"
+                    });
+                    $main.animate({
+                        left: "30%"
+                    });
+                    return
+                }
+
+                $leftNav.animate({
+                    left: "-30%"
+                });
+                $main.animate({
+                    left: "0"
+                })
+            });
+        })
+    </script>
+</main-layout>

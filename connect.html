@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <style>
+        p {
+            margin-top: 20px;
+        }
+
+        #mapDiv {
+            width: 90%;
+            height: 250px;
+            margin: 10px auto;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="nav-bar">
+    <span class="fa fa-reorder nav-icon menu-icon pull-left"></span>
+    <div class="pull-right">
+        <span class="fa fa-search nav-icon"></span>
+        <span class="fa fa-shopping-cart nav-icon search-icon"></span>
+    </div>
+</div>
+
+<div id="mapDiv"></div>
+<div style="width: 90%;margin: 10px auto 100px auto">
+    <div class="context-font-size">
+        <p>地址：上海市静安区武宁南路488号2010</p>
+
+        <p>电话：86-21-52987005</p>
+
+        <p>传真：86-21-52987007</p>
+
+        <p>联系人：王恕女士</p>
+
+        <p>A：Room 2010 , Hitech Plaza , No , 488 , South Wu Ning Road ,Shanghai 200042</p>
+
+        <p>T:86-21-52987005</p>
+
+        <p>F:86-21-52987007</p>
+
+        <p>Contact：Sara Wang , Ms</p>
+    </div>
+</div>
+
+<footer fixed=true></footer>
+<script src="./lib/js/jquery-3.2.1.min.js"></script>
+<script src="./lib/js/riot.min.js"></script>
+<script src="./dist/riot_components.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=nzse0j5rYabz0SBjNKsu3CllGBMIOT1F"></script>
+<script>
+    riot.mount("*");
+
+    var longitude = 121.43727;
+    var latitude = 31.240125;
+
+    var map = new BMap.Map('mapDiv');
+    var point = new BMap.Point(longitude, latitude);
+
+    map.centerAndZoom(point, 16);
+
+    var opts = {
+        width: 30,
+        height: 20,
+        title: ""
+    };
+
+    var infoWindow = new BMap.InfoWindow("智慧广场(上海市静安区武宁南路488号2010)", opts);
+    map.openInfoWindow(infoWindow, point);
+
+    map.addControl(new BMap.MapTypeControl());
+    map.addControl(new BMap.NavigationControl());
+    map.addControl(new BMap.ScaleControl());
+    map.addControl(new BMap.OverviewMapControl());
+    map.addControl(new BMap.GeolocationControl());
+    map.enableScrollWheelZoom(true);
+</script>
+</body>
+</html>

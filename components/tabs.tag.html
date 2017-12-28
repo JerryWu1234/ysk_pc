@@ -1,0 +1,54 @@
+<tabs>
+    <ul class="tabs">
+        <yield/>
+    </ul>
+
+    <script>
+        this.on("mount", function () {
+            var children = this.tags;
+
+            var tab = children.tab;
+
+            tab.forEach(function (t) {
+                t.setWidth(100 / tab.length + "%")
+            })
+        })
+    </script>
+
+    <style>
+        .tabs {
+            overflow: hidden;
+            background-color: #CBCBCB;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 370px) {
+            ul.tabs li {
+                font-size: 14px;
+            }
+        }
+
+        .tabs li {
+            font-weight: bold;
+            padding: 10px 0;
+            color: #ffffff;
+            font-size: 16px;
+            float: left;
+            text-align: center;
+        }
+
+        .tabs li.active {
+            background-color: #5A5A5A;
+        }
+
+        .tabs li.active div {
+            background-color: #5A5A5A;
+            border: 0
+        }
+
+        .tabs li div {
+            width: 100%;
+            border-right: 1px solid #747474;
+        }
+    </style>
+</tabs>
